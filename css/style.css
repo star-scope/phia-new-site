@@ -2,7 +2,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
-.container{
+.background {
   position: fixed;
   top: 0;
   right: 0;
@@ -12,14 +12,13 @@ body {
   z-index: -100;
 }
 
-.background {
+.background__video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-
 
 .header {
   position: absolute;
@@ -72,25 +71,25 @@ body {
 }
 
 @media (min-aspect-ratio: 16/9) {
-  .background {
+  .background__video {
     height: 300%;
     top: -100%;
   }
 }
 
 @media (max-aspect-ratio: 16/9) {
-  .background {
+  .background__video {
     width: 300%;
     left: -100%;
   }
 }
 
 @media (max-width: 767px) {
-  .container {
+  .background {
     background: url('../img/videoframe.jpg') center center / cover no-repeat;
   }
 
-  .background {
+  .background__video {
     display: none;
   }
 }
